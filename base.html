@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+  <head>
+    <link rel="stylesheet" href="Styles.css">
+    <script src="Logic.js"></script>
+    <script type="text/javascript"></script>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@200;300;400;500;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <image src="images/Logo.png" class="logo-Alura"></image>
+    <div class="whole-area">
+      <div class="general-area-1">
+        <textarea rows="5"
+         name="text-area" 
+         id="messageInput"
+         placeholder="Ingrese el texto aqui"
+         class="input-area"
+         onfocus="this.placeholder = ''"
+         ></textarea>
+        <!-- <input
+          class="input-area"
+          name="encrypt-area"
+          id="messageInput"
+          value="Ingrese el texto aqui"
+          onfocus="this.value=''"
+        /> -->
+        <div class="alerta">
+          <i class="alert-icon"></i>
+          <h1 class="alert-msg">Solo letras minúsculas y sin acentos</h1>
+        </div>
+        <div class="buttons-div">
+          <button onclick="Encrypt()" class="e-button">Encriptar</button>
+          <button onclick="Decrypt()" class="d-button">Desencriptar</button>
+        </div>
+      </div>
+      <div class="general-area-2" id="general-area-2">
+        <!-- Parte 1 antes del encryptado -->
+        <div id="inner-1" class="inner-1">
+          <image src="images/Muñeco.png" class="logo-encrypt"></image>
+          <h1 class="title-encrypt">Ningún mensaje fue encontrado</h1>
+          <textarea 
+          class="text-encrypt" 
+          id="encrypt-area-1"
+          placeholder="Ingresa el texto que desees encriptar o desencriptar."
+          onfocus="this.placeholder = ''"
+          ></textarea>
+        </div>
+        <!-- Parte 2 despues del encryptado -->
+        <div id="inner-2" class="ocultar inner-2">
+          <textarea class="text-encrypt area-2"
+          id="encrypt-area-2"
+          >
+          </textarea>
+          <button onclick="copy()" id="copyButton" class="c-button" >Copiar</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

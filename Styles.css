@@ -1,0 +1,248 @@
+body{
+  background: #F3F5FC;
+  font-family: 'Inter', sans-serif;
+}
+
+.input-area{
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  color: #0A3871;
+  background: none;
+  margin-bottom: 10em;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  resize: none;
+}
+
+.input-area::placeholder{
+  color: #0A3871;
+}
+
+.logo-Alura{
+  position: absolute;
+  left: 5.4375em;
+  top: 2.5em;
+}
+
+.general-area-1{
+  background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 15em;
+}
+
+.d-button{
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  color: #0A3871;
+  padding: 23px;
+  gap: 8px;
+
+  width:  20.5em;
+  height: 4.125em;
+
+  background: #D8DFE8;
+
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.e-button{
+  font-family: inherit;
+  font-size: inherit;
+  color: #F3F5FC;
+  outline: none;
+  border: none;
+  justify-content: center;
+  padding: 24px;
+  gap: 8px;
+  width: 20.5em;
+  height: 4.125em;
+  background: #0A3871;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.c-button{
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0A3871;
+    outline: none;
+    border: 1px solid #0A3871;
+    justify-content: center;
+    padding: 24px;
+    gap: 8px;
+    width: 20.5em;
+    height: 4.125em;
+    background: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.alert-msg{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 1em;
+
+  color: #495057;
+
+  opacity: 0.8;
+}
+
+.alerta{
+  display: flex;
+  align-items: center;
+}
+
+.alert-icon{
+  width: 1em;
+  height: 1em;
+  background: url("images/alert.png");
+}
+
+.general-area-2{
+  height: 50em;
+  width: 20em;
+  padding: 2em;
+  background: #FFFFFF;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.whole-area{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  width: 90em;
+  height: 64em;
+}
+
+.title-encrypt{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #343A40;
+
+}
+
+.text-encrypt{
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #495057;
+  border: none;
+  outline: none;
+  /* Dark blue/dark-blue-300 */
+  background: none;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  resize: none;
+}
+
+.text-encrypt::placeholder{
+  color: #495057;
+}
+
+.area-2{
+  font-size: 24px;
+  margin-bottom: auto;
+  text-align: justify;
+}
+
+
+.general-area-2-encrypt{
+  height: 50em;
+  width: 20em;
+  padding: 2em;
+  background: #FFFFFF;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: inherit;
+}
+
+.mostrar {
+  display: flex;
+}
+
+.ocultar {
+  display: none !important;
+}
+
+.inner-1{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.inner-2{
+  height: inherit;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .whole-area{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15em;
+    width: auto;
+  }
+  .logo-Alura{
+    display: flex;
+    height: auto;
+    margin-left: 2.5em;
+    margin-top: 4.625em;
+  }
+
+  .general-area-1{
+    padding-left: 0;
+    width: 43em;
+  }
+
+  .general-area-2{
+    height: auto;
+    width: 40em;
+  }
+  .d-button{  
+    width: 332px;
+    height: 67px;
+    margin-left: 24px;
+  }
+  
+  .buttons-div{
+    display: flex;
+  }
+  
+  .c-button{
+      width: 39em;
+  }
+  .logo-encrypt{
+    display: none;
+  }
+} 
+
